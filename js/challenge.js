@@ -54,16 +54,18 @@ function increment(){
 }
 
 
-
+// minus button
 remove.addEventListener('click', function () {
     counter.innerText = parseInt(counter.innerText) - 1
 })
 
-
+// plus button
 add.addEventListener('click', function () {
     counter.innerText = parseInt(counter.innerText) + 1
 })
 
+
+// heart button
 heart.addEventListener('click', function (){
 const newLi = document.createElement('li')
 const num = counter.innerText
@@ -71,6 +73,7 @@ newLi.innerText = `${num} likes `
 likesnum.append(newLi)
 })
 
+// pause button 
 pause.addEventListener('click', function (){
     if (pause.innerText === 'pause'){
         remove.disabled = true
